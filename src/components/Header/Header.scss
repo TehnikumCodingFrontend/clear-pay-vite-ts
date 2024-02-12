@@ -1,0 +1,50 @@
+@import "/src/styles/utils/colors";
+
+.Header {
+  flex: 0 1 auto;
+  background-color: $white;
+  color: $mainTextColor;
+  padding: 25px 50px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: h;
+
+  .search_block {
+    display: flex;
+    gap: 15px;
+    background-color: transparent;
+    border: $bgc 2px solid;
+    border-radius: 12px;
+    padding: 15px;
+    .search_block_img {
+      fill: $gray;
+      width: 20px;
+    }
+    .search_block_input {
+      border: none;
+      outline: none;
+      background: transparent;
+    }
+  }
+  .languageSelect {
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+  .user_profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+    span {
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+}
