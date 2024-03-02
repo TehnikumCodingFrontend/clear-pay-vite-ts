@@ -1,0 +1,18 @@
+@import "/src/styles/utils/colors";
+
+.LastTransactions {
+  box-shadow: 0px 3px 30px 0px #0000000d;
+  padding: 46px;
+  width: 100%;
+  border-radius: 16px;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  a {
+    font-size: 18px;
+    font-weight: 500;
+    color: $gray;
+    text-align: right;
+  }
+}

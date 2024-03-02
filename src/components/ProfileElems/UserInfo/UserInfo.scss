@@ -1,0 +1,85 @@
+@import "/src/styles/utils/colors";
+
+.UserInfo {
+  padding: calc(1.28vw + 25px); //? 50-30
+  width: calc(8.65vw + 289px); //? 455-320
+  background-color: $white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 3px 30px 0px #0000000D;
+  .header {
+    display: flex;
+    gap: 26px;
+    .avatar_wrapper {
+      width: calc(0.97vw + 104.6px); //? 126-108
+      height: calc(0.97vw + 104.6px); //? 126-108
+      position: relative;
+      .avatar_img {
+        width: calc(0.97vw + 104.6px); //? 126-108
+        height: calc(0.97vw + 104.6px); //? 126-108
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          transform: scaleY(1.3);
+        }
+      }
+      .edit_avatar_img {
+        display: none;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        cursor: pointer;
+        bottom: 5%;
+        right: 1%;
+      }
+      &:hover {
+        .edit_avatar_img {
+          display: block;
+        }
+      }
+    }
+    .user_info_wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .username {
+        font-weight: 500;
+        font-size: calc(0.3vw + 16.6px); //? 24-18
+        color: $mainTextColor;
+      }
+      .user_status {
+        font-weight: 400;
+        font-size: calc(0.12vw + 13.5px); //? 16-14
+        color: $gray;
+        margin-top: calc(0.38vw + 2.6px); //? 10-4
+      }
+    }
+  }
+
+  .bottom {
+    margin-top: calc(0.96vw + 26.5px); //? 45-30
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    .bottom_elems-wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: calc(4.3vw + 26.3px);
+      .title {
+        font-weight: 400;
+        font-size: calc(0.25vw + 15px); //? 20-16
+        color: $gray;
+      }
+      .description {
+        font-weight: 400;
+        font-size: calc(0.25vw + 15px); //? 20-16
+        color: $mainTextColor;
+      }
+    }
+  }
+}

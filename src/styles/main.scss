@@ -1,6 +1,42 @@
 @import "./utils/normalize";
+@import "./utils/colors";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   // color: #19297c; //? primeColor
   font-family: "Inter";
+  background-color: $bgc;
+}
+h2 {
+  font-weight: 500;
+  font-size: calc(0.25vw + 19px); //? 24-20
+}
+
+h1 {
+  font-size: calc(0.8vw + 21.231px); //? 36-24
+  font-weight: 600;
+}
+
+.Page {
+  height: 100vh;
+  .PageWrapper {
+    //! Sidebar
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 1fr;
+    .PageContainer {
+      //! Header
+      grid-template-areas:
+        "header header"
+        "left left";
+      .container {
+        //! Content
+        padding: 100px 50px;
+      }
+    }
+  }
+  //! Footer
 }

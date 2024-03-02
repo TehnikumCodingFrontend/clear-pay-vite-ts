@@ -11,12 +11,12 @@ export const Header = () => {
         />
         <input className="search_block_input" type="text" placeholder="Поиск" />
       </div>
-      <select className="languageSelect">
-        <option value="RU">RU</option>
-        <option value="EN">EN</option>
-        <option value="UZB">UZB</option>
-      </select>
       <div className="user_profile">
+        <select className="languageSelect">
+          <option value="RU">RU</option>
+          <option value="EN">EN</option>
+          <option value="UZB">UZB</option>
+        </select>
         <img className="avatar" src="/public/img/users/usachev.jpeg" alt="" />
         <span>Дмитрий Усачев</span>
       </div>

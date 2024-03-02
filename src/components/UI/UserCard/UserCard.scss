@@ -1,0 +1,89 @@
+@import "/src/styles/utils/colors";
+
+.UserCard {
+  width: calc(4.5vw + 263.846px); //? 350-280
+  height: calc(3.6vw + 153.077px); //? 222-166
+  padding: calc(0.5vw + 20.154px); //? 30-22
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  z-index: 1;
+  img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .card_header {
+    display: flex;
+    justify-content: space-between;
+    svg {
+      fill: $white;
+      width: calc(0.4vw + 26.385px); //? 35-28
+      height: calc(0.4vw + 18.385px); //? 27-20
+    }
+    .card_logo {
+      width: calc(0.7vw + 41.462px); //? 55-44
+      height: calc(0.3vw + 12.077px); //? 17-13
+    }
+  }
+  .card_mid {
+    margin-top: calc(0.3vw + 15.077px); //? 20-16
+    display: flex;
+    flex-direction: column;
+    .card_type{
+      font-weight: 500;
+      font-size: 10px;
+    }
+    .card_balance {
+      font-weight: 600;
+      font-size: calc(0.5vw + 14.154px); //? 24-16
+      margin-top: calc(0.4vw + 2.615px); //? 10-4
+    }
+  }
+  .is_main{
+    margin-top: calc(0.4vw + 2.615px); //? 10-4
+    font-weight: 500;
+    font-size: 8px;
+    background-color: $primeColor;
+    border-radius: 6px;
+    padding: 4px 8px;
+    width: fit-content;
+    height: fit-content;
+  }
+  .card_bottom {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    .card_holder_wrapper{
+      display: flex;
+      flex-direction: column;
+      .info {
+        font-weight: 400;
+        font-size: calc(0.1vw + 11.538px); //? 14-12
+      }
+      .owner_name{
+        font-weight: 500;
+        font-size: calc(0.1vw + 15.538px); //? 18-16
+        margin-top: calc(0.1vw + 5.538px); //? 8-6
+      }
+    }
+    .expiration_date_wrapper{
+      display: flex;
+      flex-direction: column;
+      .info {
+        font-weight: 400;
+        font-size: 14px;
+      }
+      .expiration_date {
+        font-weight: 500;
+        font-size: calc(0.1vw + 15.538px); //? 18-16
+        margin-top: calc(0.1vw + 5.538px); //? 8-6
+      }
+    }
+  }
+}

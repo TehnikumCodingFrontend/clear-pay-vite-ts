@@ -1,0 +1,30 @@
+@import "/src/styles/utils/colors";
+
+.ExchangePage {
+  .ExchangeWrapper {
+    .content_top_wrapper {
+      display: flex;
+      justify-content: space-between;
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+      }
+    }
+    .content_bottom_wrapper {
+      margin-top: 90px;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      .components {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

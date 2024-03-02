@@ -1,0 +1,64 @@
+@import "/src/styles/utils/colors";
+
+.ExchangeCard {
+  width: 518px;
+  border-radius: 16px;
+  padding: 40px;
+  background-color: $white;
+  box-shadow: 0px 3px 30px 0px #0000000d;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  // label {
+  //   // width: 100%;
+  //   span {
+  //     font-size: 20px;
+  //     font-size: 20px;
+  //     font-weight: 400;
+  //   }
+  //   div {
+  //     background-color: $bgc;
+  //     height: 60px;
+  //     // padding: 14px, 20px;
+  //     border-radius: 10px;
+  //     display: flex;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //     font-size: 20px;
+  //     font-weight: 500;
+  //     padding: 20px;
+  //     input {
+  //       border: none;
+  //       background: transparent;
+  //       outline: none;
+  //     }
+  //     svg {
+  //       width: 23px;
+  //       fill: $gray;
+  //     }
+  //   }
+  // }
+  .card_info_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+
+
+    label {
+      font-size: 16px;
+      font-weight: 500;
+
+      // width: 40%;
+      div {
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        input {
+          width: 100%;
+        }
+      }
+    }
+  
+  }
+}

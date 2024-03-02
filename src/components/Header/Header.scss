@@ -28,15 +28,11 @@
       background: transparent;
     }
   }
-  .languageSelect {
-    outline: none;
-    border: none;
-    background: transparent;
-  }
+
   .user_profile {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
     img {
       width: 60px;
       height: 60px;
@@ -45,6 +41,11 @@
     span {
       font-weight: 400;
       font-size: 18px;
+    }
+    .languageSelect {
+      outline: none;
+      border: none;
+      background: transparent;
     }
   }
 }

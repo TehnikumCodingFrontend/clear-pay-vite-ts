@@ -1,0 +1,54 @@
+@import "/src/styles/utils/colors";
+
+.AddCardButton {
+  margin-top: calc(0.5vw + 17.692px); //? 30-20
+  width: calc(4.5vw + 263.846px); //? 350-280
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+  border: 1px $gray solid;
+  cursor: pointer;
+  img {
+  }
+  span {
+    color: $gray;
+  }
+}
+
+.AppButton {
+  background-color: $primeColor;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  // width: 456px;
+  // height: 72px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 20px;
+  color: $white;
+  transition: 300ms;
+  &:hover {
+    text-decoration: none;
+    background-color: $primeColorLight;
+  }
+
+  &:active {
+    background-color: $bgc;
+    color: $primeColor;
+    svg {
+      fill: $primeColor;
+    }
+  }
+  &[disabled] {
+    background-color: $disabledButtonBgc;
+    color: $white;
+  }
+}

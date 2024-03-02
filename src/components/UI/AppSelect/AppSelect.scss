@@ -1,0 +1,23 @@
+@import "/src/styles/utils/colors";
+
+.AppSelect {
+  span {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  select {
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: $bgc;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 22px;
+  }
+
+  option {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}

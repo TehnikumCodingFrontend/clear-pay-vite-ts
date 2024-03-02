@@ -1,0 +1,33 @@
+@import "/src/styles/utils/colors";
+
+.AppInput {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  .input_wrapper {
+    width: 100%;
+
+    background-color: $bgc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 22px;
+    
+    input {
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+    }
+    svg {
+      fill: $gray;
+    }
+  }
+}

@@ -1,43 +1,69 @@
 @import "/src/styles/utils/colors";
 
 .Sidebar {
-  grid-area: s;
+  width: 100%;
+  height: 100%;
   background-color: $primeColor;
   background: linear-gradient(
     180deg,
     rgba(25, 41, 124, 1) 0%,
     rgba(7, 11, 33, 1) 100%
   );
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 117px;
-  padding: 33px 50px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  height: 100%;
-
-  .nav_items_wrapper {
+  color: $invertedTextColor;
+  padding:  30px; //? 30-10
+  padding-right: 0;
+  .sidebar_logo {
+    width: 232px; //? 232-120
+    margin-bottom: 60px; //? 120-60
+  }
+  ul {
     display: flex;
     flex-direction: column;
-    gap: 46px;
-    .nav_item {
-      display: flex;
-      align-items: center;
-      gap: 26px;
-      color: $white;
-      font-size: 22px;
-      font-weight: 500;
-      .nav_svg {
-        fill: $white;
-        width: 22px;
-      }
-      span {
-        font-size: 22px;
-        font-weight: 500;
+    gap: 26px;
+    li {
+      font-size: calc(0.1vw + 19.5px); //? 22 | 20
+      line-height: 125%;
+      list-style: none;
+      a {
+        color: $invertedTextColor;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 25px; //? 25-20
+        padding: 20px; //? 20-15
+        border-radius: 10px 0 0 10px;
+        transition: 300ms cubic-bezier(0, 0, 0.2, 1);
+
+        svg {
+          width: 23px;
+          fill: $invertedTextColor;
+          stroke: 2;
+        }
+  
+        &:hover {
+          text-decoration: none;
+          background-color: $primeColorLight;
+        }
+  
+        &:active {
+          background-color: $bgc;
+          color: $primeColor;
+          svg {
+            fill: $primeColor;
+          }
+        }
+  
+        &._active {
+          background-color: $bgc;
+          color: $primeColor;
+          box-shadow: 0 0 10px $bgc;
+          svg {
+            fill: $primeColor;
+          }
+        }
       }
     }
+    
   }
+  
 }

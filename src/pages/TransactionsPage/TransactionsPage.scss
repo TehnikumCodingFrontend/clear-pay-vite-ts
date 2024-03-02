@@ -1,0 +1,11 @@
+@import "/src/styles/utils/colors";
+
+.TransactionsPage{
+  .transactions_top_wrapper {
+    display: flex;
+    gap: 32px;
+  }
+  .transactions_bottom_wrapper {
+    margin-top: 32px;
+  }
+}

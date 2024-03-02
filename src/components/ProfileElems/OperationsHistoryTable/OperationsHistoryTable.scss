@@ -1,0 +1,108 @@
+@import "/src/styles/utils/colors";
+
+.OperationsHistoryTable {
+  width: calc(40vw + 176px); //? 944-320
+  border-radius: 16px;
+  box-shadow: 0px 3px 30px 0px #0000000d;
+  padding: calc(1.3vw + 15.385px); //? 40-20
+  background-color: $white;
+  table {
+    width: 100%;
+    margin-top: calc(0.6vw + 22.692px); //? 35-25
+    tr {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $lightGray;
+      padding-bottom: 20px;
+      margin-top: calc(0.4vw + 18.615px); //? 26-20
+      th {
+        font-size: calc(0.3vw + 13.077px); //? 18-14
+        font-weight: 600;
+        text-align: left;
+        color: $mainTextColor;
+        width: calc(4.4vw + 116.308px); //? 200-132
+      }
+      td {
+        font-size: 18px; //? 18-14
+        font-weight: 400;
+        text-align: left;
+        color: #333333;
+        width: calc(4.4vw + 116.308px); //? 200-132
+      }
+    }
+  }
+  .show_more {
+    font-size: 18px;
+    font-weight: 500;
+    color: $gray;
+    text-align: right;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+}
+
+.operation-success {
+  width: calc(7vw + 61.846px); //? 196-87
+  height: calc(1.4vw + 14.923px); //? 42-20
+  border-radius: 19px;
+  background-color: $green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(0.1vw + 5.538px); //? 8-6
+  .status_icon {
+    fill: $white;
+    width: calc(0.4vw + 8.615px); //? 16-10
+    height: calc(0.4vw + 8.615px); //? 16-10
+  }
+  .status_text {
+    font-size: calc(0.5vw + 8.154px); //? 18-10
+    font-weight: 400;
+    text-align: center;
+    color: $white;
+  }
+}
+
+.operation-canceled {
+  width: calc(7vw + 61.846px); //? 196-87
+  height: calc(1.4vw + 14.923px); //? 42-20
+  border-radius: 19px;
+  background-color: $red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(0.1vw + 5.538px); //? 8-6
+  .status_icon {
+    fill: $white;
+    width: calc(0.4vw + 8.615px); //? 16-10
+    height: calc(0.4vw + 8.615px); //? 16-10
+  }
+  .status_text {
+    font-size: calc(0.5vw + 8.154px); //? 18-10
+    font-weight: 400;
+    text-align: center;
+    color: $white;
+  }
+}
+
+.operation-inProcess {
+  width: calc(7vw + 61.846px); //? 196-87
+  height: calc(1.4vw + 14.923px); //? 42-20
+  border-radius: 19px;
+  background-color: $primeColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(0.1vw + 5.538px);
+  .status_icon {
+    fill: $white;
+    width: calc(0.4vw + 8.615px); //? 16-10
+    height: calc(0.4vw + 8.615px); //? 16-10
+  }
+  .status_text {
+    font-size: calc(0.5vw + 8.154px); //? 18-10
+    font-weight: 400;
+    text-align: center;
+    color: $white;
+  }
+}

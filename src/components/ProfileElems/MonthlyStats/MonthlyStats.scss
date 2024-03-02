@@ -1,0 +1,38 @@
+@import "/src/styles/utils/colors";
+
+.MonthlyStats {
+  background-color: $white;
+  padding: calc(1.2vw + 15.3px); //? 40-20
+  width: calc(39.7vw + 177px); //? 940-320
+  border-radius: 16px;
+  box-shadow: 0px 3px 30px 0px #0000000D;
+  .stats_elems_wrapper {
+    display: flex;
+    justify-content: space-between;
+    // gap: calc(0.64vw + 19.6px); //? 32-22
+    align-items: center;
+    // flex-wrap: wrap;
+    margin-top: calc(0.96vw + 21.5px); //? 40-25
+    .stats_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $bgc;
+      width: calc(3.5vw + 121px); //? 190-134
+      height: calc(2.5vw + 90.7px); //? 140-100
+      border-radius: 10px;
+      text-align: center;
+      .stat_number {
+        font-weight: 700;
+        font-size: calc(0.5vw + 30px); //? 40-32
+        color: $primeColor;
+      }
+      .stat_type {
+        font-weight: 400;
+        font-size: calc(0.25vw + 11px); //? 16-12
+        margin-top: 10px;
+      }
+    }
+  }
+}

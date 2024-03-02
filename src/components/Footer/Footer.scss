@@ -1,0 +1,36 @@
+@import "/src/styles/utils/colors";
+
+footer {
+  background-color: $footerBgc;
+  padding: 140px 48px;
+  display: flex;
+  justify-content: space-between;
+  .links_wrapper {
+    .footer_logo {
+      margin-bottom: 100px;
+      width: 232px;
+      height: 45px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 38px;
+      list-style: none;
+      span {
+        font-size: 22px;
+        font-weight: 600;
+        text-align: left;
+        color: $gray;
+      }
+      li {
+        a {
+          text-decoration: none;
+          font-size: 22px;
+          font-weight: 400;
+          text-align: left;
+          color: $white;
+        }
+      }
+    }
+  }
+}
